@@ -67,6 +67,7 @@ accept-me/
 │   │               └── accept/
 │   │                   └── ApplicationTests.java
 │   │
+│   ├── HELP.md
 │   ├── mvnw
 │   ├── mvnw.cmd
 │   ├── pom.xml
