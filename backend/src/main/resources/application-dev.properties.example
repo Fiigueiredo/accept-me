@@ -1,4 +1,4 @@
-SERVER_PORT= ----> Your_port
+server.port= ----> Your_port
 PROJECT_NAME= ----> Name_of_your_project
 
 APP_LOCALE=pt_BR
