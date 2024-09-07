@@ -142,7 +142,7 @@ cp src/main/resources/application-dev.properties.example src/main/resources/appl
 Configure the **DATABASE_URL**, **DATABASE_USERNAME**, and **DATABASE_PASSWORD** variables according to your local environment in the `application-dev.properties` file:
 
 ```bash
-SERVER_PORT='Your_port'
+server.port='Your_port'
 PROJECT_NAME='Name_of_your_project'
 
 APP_LOCALE='pt_BR'
