@@ -29,7 +29,7 @@ import jakarta.validation.Valid;
 
 @Validated
 @RestController
-@RequestMapping("/students")
+@RequestMapping("students")
 @Tag(name = "Students Controller", description = "REST API for managing students")
 public class StudentController {
 
@@ -72,7 +72,7 @@ public class StudentController {
 		return new ResponseEntity<>(createdStudent, HttpStatus.CREATED);
 	}
 
-	@PutMapping("/{id}")
+	@PutMapping("{id}")
 	@Operation(summary = "Update a Student", description = "Update the details of an existing student")
 	@ApiResponses({
 			@ApiResponse(responseCode = "200", description = "Student updated", content = @Content(mediaType = "application/json", schema = @Schema(implementation = StudentDTO.class))),

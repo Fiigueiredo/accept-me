@@ -16,7 +16,7 @@ public @Data class StudentDTO {
     private UUID studentId;
 
     @NotBlank(message = "Full name is required")
-    @Schema(description = "Full name of the student", example = "Levi Figueiredo")
+    @Schema(description = "Full name of the student", example = "Levi Livinston")
     private String fullName;
 
     @NotNull(message = "Age is required")
@@ -24,7 +24,7 @@ public @Data class StudentDTO {
     private Integer age;
 
     @NotBlank(message = "Teacher's name is required")
-    @Schema(description = "Teacher's name of the student", example = "Professor Boas")
+    @Schema(description = "Teacher's name of the student", example = "Gustavo Boaz")
     private String teacherName;
 
     @NotBlank(message = "Room number is required")
