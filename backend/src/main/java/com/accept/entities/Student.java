@@ -54,12 +54,12 @@ public @Data class Student {
 
     @NotNull(message = "First semester grade is required")
     @Column(name = "first_semester_grade", nullable = false)
-    @Schema(description = "First semester grade of the student", example = "9.5")
+    @Schema(description = "First semester grade of the student", example = "8.5")
     private Double firstSemesterGrade;
 
     @NotNull(message = "Second semester grade is required")
     @Column(name = "second_semester_grade", nullable = false)
-    @Schema(description = "Second semester grade of the student", example = "9.8")
+    @Schema(description = "Second semester grade of the student", example = "9.0")
     private Double secondSemesterGrade;
 
     @Column(name = "created_at", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP", nullable = false, updatable = false)
