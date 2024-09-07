@@ -20,7 +20,7 @@ public class Application {
 		return new ModelMapper();
 	}
 	
-	@Value("${server.port}")
+	@Value("${SERVER_PORT}")
 	private String serverPort;
 
 	@EventListener(ApplicationReadyEvent.class)
