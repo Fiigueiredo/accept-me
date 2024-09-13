@@ -35,6 +35,10 @@ public class StudentService {
 	@Transactional(readOnly = true)
 	public List<StudentDTO> getAllStudents() {
 		List<Student> students = studentRepository.findAll();
+
+		if (students.isEmpty()) {
+			throw new EntityNotFoundException("No students found.");
+		}
 		return students.stream().map(student -> modelMapper.map(student, StudentDTO.class))
 				.collect(Collectors.toList());
 	}
